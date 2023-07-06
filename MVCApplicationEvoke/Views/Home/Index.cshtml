@@ -1,0 +1,64 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<script>
+    function sayHello() {
+        alert("Hello All");
+    }
+    function addTwoNumbers(a,b){
+        alert(a+b);
+    }
+</script>
+<style>
+    .text-center {
+        color: orange;
+        background-color: blue;
+    }
+
+    body {
+        background-image: url("https://media.geeksforgeeks.org/wp-content/uploads/20220224160807/Model1.png");
+    }
+</style>
+<div class="text-center">
+    <h1 class="display-4">Welcome To My World</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">We Provide the special building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+
+<div style="background-color:aqua">
+    <p>
+        @ViewBag.ValueToViews
+        <hr />
+        @ViewBag.SecondValue
+        <hr />
+        @ViewBag.number
+        <hr />
+        @ViewBag.boolean
+        <hr />
+    </p>
+
+</div>
+<div style="background-color:antiquewhite">
+    <label>Enter your data</label><br />
+
+    <input type="text" value="@ViewBag.SecondValue" id="txt1" />
+    <input type="button" onclick="addTwoNumbers(10,20)" value="Submit" />
+    </div>
+
+
+<ul>
+    <li>
+        Home
+    </li>
+    <li>
+        About
+    </li>
+    <li>
+        Support
+    </li>
+</ul>
+
+</div>
+<div>
+    <img src=url("https://media.geeksforgeeks.org/wp-content/uploads/20220224160807/Model1.png") />
+</div>}
