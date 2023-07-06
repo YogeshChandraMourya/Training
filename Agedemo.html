@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<script>
+    function fun() {
+        var m = document.getElementById("name");
+
+        var n = document.getElementById("age").value;
+
+        var res = document.getElementById("result");
+        if (n >= 18) {
+            return res.innerHTML = m.value + " is eligible to vote";
+        }
+        else {
+            return res.innerHTML = m.value + " is not eligible to vote"
+        }
+
+        //return res.innerHTML = "Welcome " + n.value;
+        //alert("");
+    }
+</script>
+<body>
+    <center>
+        <form>
+            <table>
+                <tr>
+                    <td>
+                        <label>Name: </label>
+                        <input type="text" id="name" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Age: </label>
+                        <input type="number" id="age" />
+                    </td>
+                </tr>
+                <tr>
+
+                    <td>
+                        <input type="button" value="Check Eligibility" onclick="fun()" />
+                    </td>
+
+
+                </tr>
+                <tr>
+                    <td>
+                        <label id="result"></label>
+                    </td>
+                </tr>
+
+            </table>
+        </form>
+    </center>
+
+</body>
+</html>

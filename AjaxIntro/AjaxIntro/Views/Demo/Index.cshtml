@@ -1,0 +1,116 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            // document.getElementById().click
+            $('#buttonDemo1').click(function () {
+                $.ajax({
+                    type: 'GET',
+                    url: '/demo/demo1',
+                    success: function (result) {
+                        $('#result1').html(result);
+                    }
+                });
+            });
+
+            $('#buttonDemo2').click(function () {
+                var fullName = $('#fullName').val();
+                var age=$("#age").val();
+                $.ajax({
+                    type: 'GET',
+                    url: '/demo/demo2/' + fullName,
+                    url: '/demo/demo2/' + age,
+
+                    success: function (result) {
+                        $('#result2').html(result);
+                    }
+                });
+            });
+
+            $('#buttonDemo3').click(function () {
+                $.ajax({
+                    type: 'GET',
+                    url: '/demo/demo3',
+                    success: function (result) {
+                        var s = 'Id: ' + result.id;
+                        s += '<br>Name: ' + result.name;
+                        s += '<br>Price: ' + result.price;
+                        $('#result3').html(s);
+                    }
+                });
+            });
+
+            $('#buttonDemo4').click(function () {
+                $.ajax({
+                    type: 'GET',
+                    url: '/demo/demo4',
+                    success: function (result) {
+                        var s = '<table border=1"><tr><th>Id</th><th>Name</th><th>Price</th></tr>';
+                    
+
+                        for (var i = 0; i < result.length; i++) {
+                            s+='<tr>';
+                            s += '<td>Id: ' + result[i].id +'</td>';
+                            s += '<td><b>Name:<b> ' + result[i].name +'</td>';
+                            s += '<td>Price: ' + result[i].price +'</td>';
+                            s += '<td>------------------';
+                            s+='</tr>'
+                        }
+                        s+='</table>';
+                      
+                        $('#result4').html(s);
+                    }
+                });
+            });
+
+        });
+    </script>
+</head>
+<body>
+
+    <fieldset>
+        <legend>Demo 1</legend>
+        <input type="button" value="Demo 1" id="buttonDemo1" />
+        <br />
+        <span id="result1"></span>
+    </fieldset>
+
+    <fieldset>
+        <legend>Demo 2</legend>
+        Full Name
+        <input type="text" id="fullName" />
+        <input type="button" value="Demo 2" id="buttonDemo2" />
+        <br />
+        Age
+        <input type="number" id="age" />
+        <input type="button" value="Demo 2.1" id="buttonDemo2.1" />
+        <br />
+        <span id="result2"></span>
+    </fieldset>
+
+    <fieldset>
+        <legend>Demo 3</legend>
+        <input type="button" value="Demo 3" id="buttonDemo3" />
+        <br />
+        <span id="result3"></span>
+    </fieldset>
+
+    <fieldset>
+        <legend>Demo 4</legend>
+        <input type="button" value="Demo 4" id="buttonDemo4" />
+        <br />
+        <span id="result4"></span>
+    </fieldset>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+﻿@using System.Collections;
+@model IEnumerable<Brand>
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+<table class="table">
+    <tr>
+        <th>Brand Id</th>
+        <th>Brand Name</th>
+
+    </tr>
+    @foreach (var brand in Model)
+    {
+        <tr>
+            <td>@brand.BrandId</td>
+            <td>@brand.BrandName</td>
+        </tr>
+    }
+</table>
+

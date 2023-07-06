@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<script>
+    function fun() {
+        var n = document.getElementById("name");
+        var res = document.getElementById("result");
+        return res.innerHTML = "Welcome " + n.value;
+        alert("");
+    }
+</script>
+<body>
+    <form>
+        <table>
+            <tr>
+                <td>
+                    <label>Name: </label>
+                    <input type="text" id="name" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label id="result"></label>
+                </td>
+                <td>
+                    <input type="button" value="submit" onclick="fun()" />
+                </td>
+
+            </tr>
+            
+        </table>
+    </form>
+
+</body>
+</html>

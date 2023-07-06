@@ -1,0 +1,27 @@
+{
+  "Routes": [
+
+    {
+      //http://localhost:5004/api/Values
+
+      "DownstreamPathTemplate": "/api/Values",
+      "DownstreamSchema": "http",
+      "DownstreamHttpMethod": "GET",
+      "RouteIsCaseSensitive": false,
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "5004"
+        }
+      ],
+      "UpstreamPathTemplate": "/users/Values",
+      "UpstreamHttpMethod": [ "Get" ]
+
+    }
+    
+
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost:5216"
+  }
+}

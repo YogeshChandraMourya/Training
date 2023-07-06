@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33530.505
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoveChar", "RemoveChar\RemoveChar.csproj", "{C8B700A0-9B13-45EF-89B5-A39D9CD315FC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C8B700A0-9B13-45EF-89B5-A39D9CD315FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8B700A0-9B13-45EF-89B5-A39D9CD315FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8B700A0-9B13-45EF-89B5-A39D9CD315FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8B700A0-9B13-45EF-89B5-A39D9CD315FC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {91248D1C-E4C7-4FAE-BA75-08B3050AEDBD}
+	EndGlobalSection
+EndGlobal

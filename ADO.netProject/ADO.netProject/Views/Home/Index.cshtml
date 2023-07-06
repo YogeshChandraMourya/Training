@@ -1,0 +1,20 @@
+﻿@using System.Collections;
+@model IEnumerable<CustomerType>
+@{
+    ViewData["Title"] = "Home Page";
+}
+<table class="table">
+    <tr>
+        <th>Customer Id</th>
+        <th>FirstName</th>
+        <th>LastName</th>
+    </tr>
+    @foreach (var customer in Model)
+    {
+        <tr>
+            <td>@customer.customer_id</td>
+            <td>@customer.first_name</td>
+            <td>@customer.last_name</td>
+        </tr>
+    }
+</table>

@@ -1,0 +1,40 @@
+﻿@using System.Collections;
+@model IEnumerable<Brand>
+@{
+    ViewData["Title"] = "Home Page";
+}
+<style>
+    table, th, tr,td {
+        border:1px solid black;
+    }
+</style>
+   
+
+<div class="text-center">
+    <h1 class="display-4">Brand Table</h1>
+</div>
+
+<table class="table table-condensed">
+    <tr>
+        <th>Brand Id</th>
+        <th>Brand Name</th>
+    </tr>
+    @foreach (var brand in Model)
+    {
+        <tr class="success">
+            <td>@brand.BrandId</td>
+            <td>@brand.BrandName</td>
+        </tr>
+    }
+
+
+</table>
+<br />
+<centre>
+    <a asp-action="BrandInsert"><button class="btn btn-primary btn-lg">Brand Insert</button></a>
+    <a asp-action="BrandDelete"><button class="btn btn-primary btn-lg">Brand Delete</button></a>
+    <a asp-action="BrandUpdate"><button class="btn btn-primary btn-lg">Brand Update</button></a>
+</centre>
+
+
+

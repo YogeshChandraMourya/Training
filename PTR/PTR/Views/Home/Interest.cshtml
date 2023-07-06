@@ -1,0 +1,57 @@
+﻿@*<input type="number" id="p" placeholder="Enter Principle" /><br />
+<input type="number" id="t" placeholder="Enter time of Interest" /><br />
+<input type="number" id="r" placeholder="Enter rate of interest" /><br />
+<input type="button" onclick="CalcInterest()" value="Calculate"/>
+
+<script>
+    function CalcInterest(){
+        let p=document.getElementById("p").value;
+        let t=document.getElementById("t").value;
+        let r=document.getElementById("r").value;
+
+        let i=(p*t*r)/100;
+        alert(i);
+
+    }
+</script>*@
+using System;
+using System
+@model PTR.Models.SimpleInterest
+
+@{
+    ViewBag.Title = "Interest";
+}
+<h2>Calulate Simple Interest</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <form>
+        <label>Calulate Simple Interest</label>
+        <div id="divInterestDeatils"></div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Principle)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Principle)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Rate)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Rate)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Time)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Time)
+        </div>
+        <p>
+            <input type="submit" value="Calculate" />
+        </p>
+    </form>
+}

@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@{
+    var datas = ViewData["data"] as ViewDataViewBag.Models.Avengers;
+}
+<h1>
+    @ViewData["Header"]
+</h1>
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+
+
+
+<div>
+    Id: @datas.Id;
+</div>
+<div>
+    Name:@datas.Name;
+</div>
+<div>
+    Description:@datas.Description;
+</div>
+
+@ViewBag.Dialogue

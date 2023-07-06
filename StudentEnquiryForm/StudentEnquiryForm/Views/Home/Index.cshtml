@@ -1,0 +1,151 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<style>
+    form {
+        border-style: solid;
+       padding:1px;
+    }
+    hr.new{
+        border:1.5px solid black ;
+    }
+    body{
+        padding: 30px
+    }
+    img{
+        height:200px;
+     
+    }
+
+    .container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: left;
+     
+    }
+/*
+    image {
+        max-width: 100%;
+        max-height: 100%;
+    }*/
+
+    .text {
+        font-size: 70px;
+        font-family:'Times New Roman', Times, serif;
+    }
+    .top{
+        border:solid 1.5px;
+    }
+    
+
+</style>
+
+    <div class="container">
+        <div class="image"><img src="https://1000logos.net/wp-content/uploads/2021/04/Hogwarts-Logo.png" alt="Hogwarts"></div>
+        <div class="text"><h1>Hogwarts University <br />
+            Home for Wizard Education<br />
+            Magic University of Mystery</h1></div>
+    </div>
+
+<div class="form">
+    <body>
+       
+       
+        
+        <div class="top">
+            <center><h3>Wizard Association</h3></center>
+
+            <hr class="new" />
+
+            <center><h3><i>Student Inquiry Form</i></h3></center>
+            <hr class="new" />
+        </div>
+       
+
+
+
+
+        <form>
+            <br />
+            <label>
+                Student ID Number
+            </label>
+            <input type="text" />&nbsp;&nbsp;
+            <label>Date</label>
+            <input type="date" />
+            <br /><hr class="new" />
+            <label>
+                Full name
+            </label>
+            <input type="text" placeholder="First Name" /> &nbsp;<input type="text" placeholder="Middle Name" />&nbsp;<input type="text" placeholder="Last Name" /><br />
+            <hr class="new" />
+            <label>
+                Phone Number
+            </label>
+            <input type="number" />
+            <label>Cell</label>
+            <input type="number" /><br /><hr class ="new" />
+            <label>E-Mail:</label>
+            <input type="email" /><br /><hr class="new"/>
+            
+            <label>
+                Home Address:
+            </label>
+            <textarea></textarea>
+            <hr class="new" /><br />
+            <label>Employment Status:</label>
+            <input type="checkbox" value="Full-Time" />Full-Time
+            <input type="checkbox" value="Part-Time" />Part-Time
+            <input type="checkbox" value="Unemployed" />Unemployed<br />
+            <hr class="new" />
+            <label>Company Name:</label>
+            <input type="text" /><br />
+            <hr />
+            <label>Are you a Veteran?</label>
+            <input type="checkbox" value="Yes" />Yes
+            <input type="checkbox" value="No" />No
+            <br />
+            <hr class="new" />
+            <label>Your English skills are:</label>
+            <input type="checkbox" value="Beginner" />Beginner
+            <input type="checkbox" value="Intermediate" />Intermediate
+            <input type="checkbox" value="Advanced" />Advanced
+            <br />
+            <hr class="new" />
+            <label>
+                Are you eligible to work in the US?
+            </label>
+            <input type="checkbox" value="Yes" />Yes
+            <input type="checkbox" value="No" />No
+            <br />
+            <hr class="new" />
+            <label>
+                Highest degree you have earned:
+            </label>
+            <input type="checkbox" value="HS Diploma" />HS Diploma
+            <input type="checkbox" value="GED" />GED
+            <input type="checkbox" value="AAS" />AAS
+            <input type="checkbox" value="BA" />BA
+            <br />
+            <hr class="new" />
+            <label>
+                How did you learn about the program?
+            </label>
+            <br />
+            <hr class="new" />
+            <br />
+            <hr class="new" />
+            <center><h4><b>For More Information,Contact:<br />
+                Program Adviser<br />
+                718.552.1150<br /></b></h4>
+            <a href="#">WizardWorld@magic.univ.edu</a></center>
+
+
+
+            
+
+        </form>
+    </body>
+
+</div>
